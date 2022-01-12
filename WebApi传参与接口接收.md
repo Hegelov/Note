@@ -94,7 +94,7 @@ data: {
 ```
 data: { "": "Jim" },
 ```
-注意这里不能写key值，否则后台获取到的值将为空，后台使用 ***[FromUri]*** 关键字获取
+注意这里不能写key值，否则后台获取到的值将为空，后台使用 ***[FromBody]*** 关键字获取
 ``` csharp
 [HttpPost]
      public bool SaveData([FromBody]string NAME)
@@ -161,7 +161,7 @@ data: JSON.stringify(postdata),
    {
        return true;
    }
- ```
+```
 
 ### 5：基础类型+实体：
 **指前台定contentType为*appplication/json*，后台使用`dynamic`关键字接收**
@@ -199,7 +199,7 @@ data: JSON.stringify(arr),
     {
          return true;
     }
- ```
+```
 ### 7:实体集合：
 **前台指定contentType为*appplication/json***
 
